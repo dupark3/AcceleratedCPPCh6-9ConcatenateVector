@@ -1,6 +1,15 @@
+/*
+Accelerated C++ by Koenig
+Exercise 6-9
+Page 122
+Use a library algorithm to concatenate all the elements of a vector<string>.
+*/
+
 #include <iostream>
 #include <string>
 #include <vector>
+
+#include "concatenateStrings.h"
 
 int main(){
     // Obtain strings from user and store in vector
@@ -10,7 +19,7 @@ int main(){
     while(std::cin >> s)
         vec.push_back(s);
 
-    std::string concatenated = concatenateString(vec);
+    std::string concatenated = concatenateStrings(vec);
 
     std::cout << std::endl
               << "Result: " << concatenated;
